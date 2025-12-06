@@ -1,4 +1,9 @@
-# Contributing to Workflow Automation Bot
+cd /home/wtc/Desktop/Workflow-Automation-Bot
+python -m venv venv
+source venv/bin/activate
+pip install -r requirements.txt
+python main.py --setup
+python main.py --test# Contributing to Workflow Automation Bot
 
 ## 🤝 How to Contribute
 
