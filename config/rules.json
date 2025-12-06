@@ -1,0 +1,30 @@
+{
+  "csv": {
+    "remove_duplicates": true,
+    "handle_missing": "fill_zeros",
+    "required_columns": ["id", "date", "value"],
+    "date_format": "%Y-%m-%d"
+  },
+  "json": {
+    "validate_schema": true,
+    "flatten_nested": false,
+    "required_fields": ["timestamp", "data"]
+  },
+  "excel": {
+    "remove_duplicates": true,
+    "handle_missing": "fill_zeros",
+    "required_columns": ["id", "date", "value"]
+  },
+  "notifications": {
+    "console": true,
+    "log_file": true,
+    "slack": false,
+    "email": false
+  },
+  "processing": {
+    "max_retries": 3,
+    "retry_delay": 5,
+    "timeout_seconds": 300,
+    "parallel_workers": 1
+  }
+}
